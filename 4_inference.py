@@ -107,7 +107,7 @@ net = net.eval().to(device)
 
 # load the atlas
 atlas_dict = {}
-atlas_name = "desikan"
+atlas_name = "harvard-oxford"
 atlas = nib.load(f"Resampled_atlases/{atlas_name}_atlas.nii.gz")
 atlas_data = atlas.get_fdata()
 with open(f"Resampled_atlases/{atlas_name}_labels.txt", 'r') as file:
